@@ -5,7 +5,7 @@ function ArtGallery() {
     
   return (
     <ul className="cards">
-        <ArtCard/>
+        <ArtCard />
     </ul>
   );
 }

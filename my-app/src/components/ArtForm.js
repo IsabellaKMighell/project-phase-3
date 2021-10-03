@@ -1,13 +1,11 @@
 import React, {useState} from "react";
 
-function NewArtForm() {
+function ArtForm() {
   const[formData,setFormData]=useState({
     name:"",
     image:"",
     description:"",
-    comment: "",
-    price:
-    
+    comment: ""
   })
 
   function handleChange(e){
@@ -51,4 +49,4 @@ function NewArtForm() {
   );
 }
 
-export default NewArtForm;
+export default ArtForm;

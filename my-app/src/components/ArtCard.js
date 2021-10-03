@@ -1,8 +1,8 @@
 import React, {useState} from "react";
 
-function ArtCard({art}) {
+function ArtCard() {
   const[inStock,setInStock]=useState(true)
-  const{name, image, price}= art
+  //const{name, image, price}= art
 
   function handleInStock(){
     setInStock(!inStock)
@@ -10,9 +10,9 @@ function ArtCard({art}) {
 
   return (
     <li className="card">
-      <img src={image} alt={"art name"} />
-      <h4>{name}</h4>
-      <p>Price: {price}</p>
+      <img alt={"art name"} />
+      <h4>Name</h4>
+      <p>Price: </p>
       {inStock ? (
         <button className="primary" onClick={handleInStock}>Available</button>
       ) : (
